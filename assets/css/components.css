@@ -1,0 +1,9 @@
+/* 인풋 */
+
+/* 리스트 */
+
+/* 테이블 */
+
+/* 모달 */
+.modal{display: none;}
+.modal.active{display: block;}

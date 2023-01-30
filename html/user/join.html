@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <script></script>
+    <script></script>
+</head>
+<body>
+    <div id="login" class="wrap">
+        <!-- #include | header -->
+        <div include-html="../include/header.html"></div>
+
+        <div class="container">
+            <h2>회원가입</h2>
+            <form action="">
+                <div>
+                    <label for="">이메일 <em>*</em></label>
+                    <input type="email" placeholder="이메일 입력">
+                </div>
+                <div>
+                    <label for="">비밀번호 <em>*</em></label>
+                    <input type="password" placeholder="비밀번호 입력">
+                </div>
+                <div>
+                    <label for="">비밀번호 확인 <em>*</em></label>
+                    <input type="password" placeholder="비밀번호 확인">
+                </div>
+                <div>
+                    <label for="">이름 <em>*</em></label>
+                    <input type="text" placeholder="이름 입력">
+                </div>
+                <div>
+                    <label for="">휴대폰 번호 <em>*</em></label>
+                    <input type="tel" placeholder="휴대폰 번호 (-없이 입력)">
+                    <button type="submit">인증번호 전송</button>
+                    <div>
+                        <input type="number" placeholder="인증번호" value="남은시간 : 0분 00초">
+                        <button type="submit">인증번호 확인</button>
+                    </div>
+                </div>
+                <div>
+                    <label for="">생일</label>
+                    <input type="text" placeholder="YYYY/MM/DD">
+                </div>
+                <div>
+                    <label for="">직업 <em>*</em></label>
+                    <select name="" id="">
+                        <option value="선택">선택</option>
+                    </select>
+                </div>
+
+                <div class="btns">
+                    <button type="submit">가입하기</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- #include | footer -->
+        <div include-html="../include/footer.html"></div>
+    </div>
+
+    <script>
+        
+        // include code | header.html // 추후 불필요 시 삭제
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+ 
+    </script>
+</body>
+</html>

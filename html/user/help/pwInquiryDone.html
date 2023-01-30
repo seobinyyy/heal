@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <script></script>
+    <script></script>
+</head>
+<body>
+    <div id="login" class="wrap">
+        <!-- #include | header -->
+        <div include-html="../include/header.html"></div>
+
+        <div class="container">
+            <strong>ths4587@idstrust.com 으로 임시 비밀번호를 발급했습니다.</strong>
+
+            <div class="btns">
+                <a href="">로그인 하기</a>
+            </div>
+        </div>
+
+        <!-- #include | footer -->
+        <div include-html="../include/footer.html"></div>
+    </div>
+
+    <script>
+        
+        // include code | header.html // 추후 불필요 시 삭제
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+ 
+    </script>
+</body>
+</html>

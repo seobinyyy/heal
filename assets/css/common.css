@@ -1,0 +1,24 @@
+/* ** 구조화 ** */
+
+/* 1. header */
+
+/* 2. #container */
+
+/* 3 footer */
+
+
+/* ** 미디어쿼리 ** */
+/* wide web */
+@media screen and (min-width: 1920px){
+    body{}
+}
+
+/* tablet ~ web */
+@media screen and (min-width: 1024px) and (max-width: 1919px){
+    body{background: green;}
+}
+
+/* mobile ~ tablet */
+@media screen and (max-width: 1023px){
+    body{background: greenyellow;}
+}
