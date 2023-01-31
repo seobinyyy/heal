@@ -1,4 +1,4 @@
-// 인클루드 코드 (header.html, footer.html) // 추후 불필요 시 삭제
+// 인클루드 코드 (header.html, footer.html) // 추후 삭제
 window.addEventListener('load', function() {
     var allElements = document.getElementsByTagName('*');
     Array.prototype.forEach.call(allElements, function(el) {
@@ -30,7 +30,6 @@ $(function(){
     // 모달창 열기
     var $btnModal = $(".btn-modal");
     var $modal = $(".modal");
-
     $btnModal.on("click", function(){
         if($(this).attr("data-show") == $modal.attr("id")){
             var dataShow = $(this).attr("data-show");
@@ -39,26 +38,22 @@ $(function(){
     });
     
     // 모달창 닫기
-    // var $modalClose = $("button").hasattr("data-dismiss","modal");
-    // $modalClose.on("click", function(){
-        // if($(this).attr("") == "modal"){
-            // alert("d");
-        // $(this).parents(".modal").hide();
-        // }
-        
-    // });
+    var $modalClose = $("button");
+    $modalClose.on("click", function(){
+        if($(this).attr("data-dismiss") == "modal"){
+            $(this).parents(".modal").hide();
+        }else{
+            
+        }
+    });
 
+    // 디바이스 분기 처리
     if(isMobile()) {
         // mobile only code
         console.log("mobile");
     } else {
         // pc only code
         console.log("pc");
-        // $("header .main-menu").overmouse(function(){
-        //     $(this).addClass("active");
-        // }).leavemouse(function(){
-        //     $(this).removeClass("active");
-        // });
     }
 
     // 모바일 | 헤더메뉴 열기

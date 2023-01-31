@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>메인</title>
+    <link rel="stylesheet" href="/assets/libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/base/reset.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script type="text/javascript" src="/assets/libs/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="/assets/js/common.js"></script>
+</head>
+<body>
+    <div id="main" class="wrap">
+        <!-- #include | header -->
+        <div data-include-path="/html/include/header.html"></div>
+
+        <div class="container">
+            <div class="inner">
+                <!-- 영상 -->
+                <article class="video">
+                    <div class="swiper video-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <video preload="auto" autoplay="" loop="" playsinline="" webkit-playsinline="" x5-playsinline="" style="width: 100%; height: 100%;">
+                                    <source src="https://videos.ctfassets.net/drib7o8rcbyf/Y6hCtSyr3C7a2C6GiIXmE/504c7157359a03cf2a7597ad1b1a9cec/microscopic-liquid-16x9.mp4" type="video/mp4">
+                                </video>
+                                <div class="subtitle" data-swiper-parallax="-200">
+                                    힐리언스 랩 아카데미는 전문의를 포함한 다양한 전문가의 의견을 통합하고 강의로 녹여내
+                                    트레이너들에게 더 넓은 관점을 제시하고 의사가 신뢰하는 일류 트레이너로 성장할 수 있는 기회를 제공합니다.
+                                </div>
+                                <div class="title" data-swiper-parallax="-100">해부 기초부터 전문 카데바까지</div>
+                            </div>
+                            <div class="swiper-slide" style="background: yellowgreen;">
+                                <div class="subtitle" data-swiper-parallax="-200">
+                                    힐리언스 랩 아카데미는 전문의를 포함한 다양한 전문가의 의견을 통합하고 강의로 녹여내
+                                    트레이너들에게 더 넓은 관점을 제시하고 의사가 신뢰하는 일류 트레이너로 성장할 수 있는 기회를 제공합니다.
+                                </div>
+                                <div class="title" data-swiper-parallax="-100">해부 기초부터 전문 카데바까지</div>
+                            </div>
+                            <div class="swiper-slide" style="background: lightcoral;">
+                                <div class="subtitle" data-swiper-parallax="-200">
+                                    힐리언스 랩 아카데미는 전문의를 포함한 다양한 전문가의 의견을 통합하고 강의로 녹여내
+                                    트레이너들에게 더 넓은 관점을 제시하고 의사가 신뢰하는 일류 트레이너로 성장할 수 있는 기회를 제공합니다.
+                                </div>
+                                <div class="title" data-swiper-parallax="-100">해부 기초부터 전문 카데바까지</div>
+                            </div>
+                            <div class="swiper-slide"  style="background: lightsalmon;">
+                                <div class="subtitle" data-swiper-parallax="-200">
+                                    힐리언스 랩 아카데미는 전문의를 포함한 다양한 전문가의 의견을 통합하고 강의로 녹여내
+                                    트레이너들에게 더 넓은 관점을 제시하고 의사가 신뢰하는 일류 트레이너로 성장할 수 있는 기회를 제공합니다.
+                                </div>
+                                <div class="title" data-swiper-parallax="-100">해부 기초부터 전문 카데바까지</div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </article>
+                
+                <!-- 커리큘럼 -->
+                <article class="curri">
+                    <a href="" style="height: 200px;">
+                        <strong></strong>
+                    </a>
+                    <a href="" style="height: 200px;">
+                        <strong></strong>
+                    </a>
+                </article>
+
+                <em class="block align-cnt">
+                    힐리언스 랩 아카데미는 검증된 지식만을 효과적으로 전달하는 방법을 끊임없이 연구하고 고민하는 사람들이 모였습니다.
+                </em>
+            </div>
+        </div>
+
+        <!-- #include | footer -->
+        <div data-include-path="/html/include/footer.html"></div>
+    </div>
+
+    <script>
+        // swiper.js
+        var bullet = ['힐리언스랩 스토리', '카더바란?', '해부 아카데미', '의학 전문의 강사'];
+        var swiper = new Swiper(".video-swiper", {
+            speed: 600,
+            parallax: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (bullet[index]) + "</span>";
+                }
+            },
+            scrollbar: {
+                el: ".swiper-scrollbar",
+            }
+        });
+      </script>
+</body>
+</html>
