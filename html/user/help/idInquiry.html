@@ -1,40 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/assets/css/base/reset.css">
     <link rel="stylesheet" href="">
     <script></script>
     <script></script>
 </head>
 <body>
-    <div id="login" class="wrap">
+    <div id="idInquiry" class="wrap">
         <!-- #include | header -->
-        <div include-html="../include/header.html"></div>
+        <div data-include-path="/html/include/header.html"></div>
 
         <div class="container">
-            <h2>로그인</h2>
-            <form action="">
-                <input type="email" placeholder="이메일 입력">
-                <input type="password" placeholder="비밀번호 입력">
+            <div class="inner">
+                <h2>로그인</h2>
+                <form action="">
+                    <input type="email" placeholder="이메일 입력">
+                    <input type="password" placeholder="비밀번호 입력">
 
-                <div class="btns">
-                    <button type="submit">로그인</button>
-                </div>
-            </form>
+                    <div class="btns">
+                        <button type="submit">로그인</button>
+                    </div>
+                </form>
 
-            <ul>
-                <li><a href="">아이디 찾기</a></li>
-                <li><a href="">비밀번호 찾기</a></li>
-                <li><a href="">회원가입</a></li>
-            </ul>
+                <ul>
+                    <li><a href="">아이디 찾기</a></li>
+                    <li><a href="">비밀번호 찾기</a></li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
         </div>
 
         <!-- #include | footer -->
-        <div include-html="../include/footer.html"></div>
+        <div data-include-path="/html/include/footer.html"></div>
     </div>
 
     <script>

@@ -14,54 +14,56 @@
 <body>
     <div id="login" class="wrap">
         <!-- #include | header -->
-        <div include-html="../include/header.html"></div>
+        <div data-include-path="/html/include/header.html"></div>
 
         <div class="container">
-            <aside>
-                <strong>내 계정</strong>
-                <ul>
-                    <li><a href="">개인정보</a></li>
-                    <li><a href="">결제내역</a></li>
-                </ul>
-            </aside>
-            <div class="content">
-                <h2>개인정보</h2>
-                <div class="tbl">
-                    <table cellspacing="0" cellpaddnig="0">
-                        <tbody>
-                            <tr>
-                                <th>이메일 <em>*</em></th>
-                                <td>seobin@idstrust.com</td>
-                            </tr>
-                            <tr>
-                                <th>비밀번호 <em>*</em></th>
-                                <td><button type="button">비밀번호 수정</button></td>
-                            </tr>
-                            <tr>
-                                <th>이름 <em>*</em></th>
-                                <td>김수한무거북이와두루미김수한무거북이와두루미김수한무거북이와두루미</td>
-                            </tr>
-                            <tr>
-                                <th>휴대폰 번호 <em>*</em></th>
-                                <td>010-0000-0000</td>
-                            </tr>
-                            <tr>
-                                <th>생일</th>
-                                <td>1990-04-19</td>
-                            </tr>
-                            <tr>
-                                <th>직업 <em>*</em></th>
-                                <td>퍼블리셔</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="inner">
+                <aside>
+                    <strong>내 계정</strong>
+                    <ul>
+                        <li><a href="">개인정보</a></li>
+                        <li><a href="">결제내역</a></li>
+                    </ul>
+                </aside>
+                <div class="content">
+                    <h2>개인정보</h2>
+                    <div class="tbl">
+                        <table cellspacing="0" cellpaddnig="0">
+                            <tbody>
+                                <tr>
+                                    <th>이메일 <em>*</em></th>
+                                    <td>seobin@idstrust.com</td>
+                                </tr>
+                                <tr>
+                                    <th>비밀번호 <em>*</em></th>
+                                    <td><button type="button">비밀번호 수정</button></td>
+                                </tr>
+                                <tr>
+                                    <th>이름 <em>*</em></th>
+                                    <td>김수한무거북이와두루미김수한무거북이와두루미김수한무거북이와두루미</td>
+                                </tr>
+                                <tr>
+                                    <th>휴대폰 번호 <em>*</em></th>
+                                    <td>010-0000-0000</td>
+                                </tr>
+                                <tr>
+                                    <th>생일</th>
+                                    <td>1990-04-19</td>
+                                </tr>
+                                <tr>
+                                    <th>직업 <em>*</em></th>
+                                    <td>퍼블리셔</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button type="button" class="btn-modal" data-show="modalWithdraw">탈퇴하기</button>
                 </div>
-                <button type="button" class="btn-modal" data-show="modalWithdraw">탈퇴하기</button>
             </div>
         </div>
 
         <!-- #include | footer -->
-        <div include-html="../include/footer.html"></div>
+        <div data-include-path="/html/include/footer.html"></div>
 
         <!-- modal -->
         <div id="modalWithdraw" class="modal">
