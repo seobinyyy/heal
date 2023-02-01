@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8"/>
+	<title>힐리언스 랩 아카데미 퍼블리싱 현황판</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta content="on" http-equiv="cleartype"/>
+	<meta content="noindex, nofollow" name="Robots"/>
+
+	<!-- favicon
+	================================================== -->
+<!--	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="180x180" href="resources/images/favicon/apple-touch-icon-180x180-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="167x167" href="resources/images/favicon/apple-touch-icon-167x167-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="152x152" href="resources/images/favicon/apple-touch-icon-152x152-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="144x144" href="resources/images/favicon/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="120x120" href="resources/images/favicon/apple-touch-icon-120x120-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="114x114" href="resources/images/favicon/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="76x76" href="resources/images/favicon/apple-touch-icon-76x76-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="72x72" href="resources/images/favicon/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="60x60" href="resources/images/favicon/apple-touch-icon-60x60-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="resources/images/favicon/apple-touch-icon-57x57-precomposed.png">
+	<link rel="shortcut icon" sizes="256x256" href="resources/images/favicon/favicon_256x256.png">
+	<link rel="shortcut icon" sizes="196x196" href="resources/images/favicon/favicon_196x196.png">
+	<link rel="shortcut icon" sizes="128x128" href="resources/images/favicon/favicon_128x128.png">
+	<link rel="shortcut icon" sizes="48x48" href="resources/images/favicon/favicon_48x48.png">
+	<link rel="shortcut icon" sizes="32x32" href="resources/images/favicon/favicon_32x32.png">
+	<link rel="shortcut icon" href="resources/images/favicon/favicon_16x16.png">
+
+	<link rel="icon" sizes="128x128" href="resources/images/favicon/favicon_128x128.png" type="image/png">
+	<link rel="icon" sizes="64x64" href="resources/images/favicon/favicon_64x64.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="resources/images/favicon/favicon_32x32.png" type="image/png">
+
+	<meta name="msapplication-TileImage" content="resources/images/favicon/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#072981">-->
+
+	<!-- front ui
+            ================================================== -->
+	<script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">-->
+
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+	<style>
+		/**********************************************************************************
+		** Base
+		***********************************************************************************/
+		::before, ::after, html, body, div, ul, ol, dl, li, dd, p, h1, h2, h3, h4, h5, h6, table, th, td, caption, address, article, aside, canvas, details, figure, figcaption, footer, header, menu, nav, section, button, select, textarea, input, fieldset, legend, a, span, strong, em, address, dfn, small, i, b{
+			margin:0; padding:0; list-style:none; font-family:'Noto Sans KR', 'Malgun Gothic', 'MalgunGothic', '맑은고딕', Dotum, '돋움', Verdana, sans-serif;
+			font-weight:normal; font-style:normal; word-break:break-all; color:#4c5667; border:0;
+			-moz-box-sizing:border-box; -o-box-sizing:border-box; -webkit-box-sizing:border-box;
+			box-sizing:border-box;}
+		article, aside, canvas, details, figure, figcaption, footer, header, menu, nav, section{display:block;}
+		html{font-size:14px;letter-spacing:-0.5px;}
+		body{-webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none;}
+		hr{display:none;}
+		img{vertical-align:middle;}
+		button{background-color:transparent;}
+		fieldset, iframe{width:100%;}
+		img, a, frame, iframe, fieldset{border:0;}
+		table{width:100%; border-spacing:0; border-collapse:collapse;}
+		caption{visibility:hidden; height:0; font-size:0; line-height:0;}
+		legend{position:absolute; top:-9999em; left:-9999em;}
+		a{text-decoration:none; color:#4c5667;}
+		a:hover{text-decoration:underline; }
+
+		/**********************************************************************************
+		**  Layout
+		***********************************************************************************/
+		/* IA Title */
+		.ia-section{max-width:100%; padding:0 20px;}
+		.ia-section:after{ content:''; display:block; clear:both; }
+		.ia-section.is-hide .ia-section-header{ background:#888;}
+		.ia-section.is-hide .ia-section-body{overflow:hidden; height:68px;
+			-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, rom(rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0)));
+			-webkit-mask-image:linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+			mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0)));
+			mask-image:linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+		}
+		.ia-header-wrapper{position:fixed; z-index:100; width:100%; min-height:75px; background-image: linear-gradient(to right, #3b76e1, #038edc);}
+		.ia-header-wrapper > .ia-section{position:relative; padding:10px 40px 0;}
+		.ia-content-body{padding:80px 20px 50px;}
+		#gTotal .ia-section-body{margin-top:0;}
+		.ia-section-body{margin-top:0;}
+		.ia-section-header{position:relative; padding:7px 60px 5px 10px; background:#555; cursor:pointer;}
+		.ia-section-header{position:relative; padding:7px 60px 5px 10px; background:#555; cursor:pointer;}
+		.ia-section-header:hover{background:#333;}
+		.ia-section-header .ia-h2{display:inline-block; position:relative; height:20px; font-size:15px; line-height:20px;}
+		.ia-section-header .ia-h2 a{color:#fff; }
+		.ia-section-header:after{ content:'';position:absolute; top:5px; right:30px; width:15px; height:15px; border:3px solid #fff; border-width:3px 3px 0 0; transform:rotate(135deg) translate(-50%, -50%);}
+		.ia-section.is-hide .ia-section-header:after{ top:11px; right:10px; transform:rotate(315deg) translate(-50%, -50%);}
+		.ia-header-wrapper .ia-section{-moz-transition:all 0.3s ease-out 0s; -o-transition:all 0.3s ease-out 0s; -webkit-transition:all 0.3s ease-out 0s; transition:all 0.3s ease-out;}
+
+		.ia-header-wrapper .ia-guide-link{display:block; float:right; margin-left:10px; }
+		.ia-header-wrapper .ia-guide-link.is-mobile{display:none;}
+		.ia-header-wrapper .ia-guide-link a{display:inline-block; height:25px; padding:0 10px; font-size:13px; line-height:25px; color:#fff; border-radius:3px; background:rgba(0, 0, 0, .8);}
+		.ia-header-wrapper .ia-guide-link a.is-active{opacity:0.5;}
+
+		.ia-header-wrapper .ia-header-guide-mobile{display:none;}
+		/* Section */
+		.ia-section + .ia-section{padding-top:70px;}
+		/* 목차 */
+		.ia-h1{display:inline-block; height:25px; margin-bottom:10px; margin-left:10px; font-size:20px; font-weight:normal;letter-spacing:-1px; color:#fff;}
+		.ia-h2 > a{font-size:18px; font-weight:600;}
+		.ia-h2:before{display:block; width:20px; height:1px; margin-bottom:5px; background-color:#222;}
+		.ia-h4{margin-bottom:10px; font-weight:bold; color:#343b45;}
+		.ia-h4 > em{font-weight:bold;}
+		.ia-h3 + .ia-h4{margin-top:10px;}
+		.ia-h4:before{content:''; display:inline-block; position:relative; top:-1px; width:3px; height:13px; margin-right:5px; vertical-align:middle; background-color:#343b45;}
+		/**********************************************************************************
+		** Content
+		***********************************************************************************/
+		/* Graph */
+		.ia-graph li{margin:5px 0;}
+		.ia-graph a{display:block; position:relative; line-height:20px;}
+		.ia-graph span{display:inline-block;}
+		.ia-graph .tit{display:inline-block; position:absolute; z-index:2; top:0; left:0; overflow:hidden; width:200px; height:100%; padding:0 10px; font-size:13px; white-space:nowrap;letter-spacing:-1px;text-overflow:ellipsis; color:#fff; border-radius:10px 0 0 10px; background-color:#666666;}
+		.ia-graph .bar{display:block; position:relative; z-index:1; overflow:hidden; height:21px; margin-left:200px; border-radius:0 10px 10px 0; background-color:rgba(0, 0, 0, 0.1); }
+		.ia-graph .bar:before{content:attr(data-process); display:inline-block; position:absolute; z-index:2; top:2px; right:0; width:120px; font-size:12px; font-weight:bold;text-align:right; color:#000;}
+		.ia-graph .bar .active{display:block; position:absolute; z-index:1; top:0; left:0; width:0; height:100%; opacity:0.3; -moz-transition:width 0.6s ease-out 0s; -o-transition:width 0.6s ease-out 0s; -webkit-transition:width 0.6s ease-out 0s; transition:width 0.6s ease-out;}
+		.ia-graph .pages{position:absolute; z-index:3; top:2px; left:200px; width:200px; padding-left:10px; font-size:12px;text-align:left; color:#000 !important;}
+		.ia-graph .pages em{font-weight:bold; vertical-align:top; color:#000;}
+		.ia-graph .bar:before, .ia-graph .pages{padding:0 15px;}
+		.ico-new{display:inline-block; position:relative; width:auto; height:13px; margin-top:2px; margin-left:5px; padding:1px 3px 2px 2px;
+			font-size:10px; font-weight:800; font-style:italic; line-height:12px;
+			vertical-align:top; color:#ff0000;
+			background:#fff6d6;
+		}
+		.ico-update{display:inline-block; position:relative; width:auto; height:13px; margin-top:2px; margin-left:5px; padding:1px 3px 2px 2px;
+			font-size:10px; font-weight:800; font-style:italic; line-height:12px;
+			vertical-align:top; color:#ff0000;
+			background:#dcf5e7;
+		}
+		/* Note */
+		.ia-note-wrap{padding:20px; border:solid 1px #eee;}
+		.ia-note-wrap .ia-box-note{}
+		/* Legend */
+		.ia-legend{position:absolute; top:9px; right:70px;}
+		.ia-legend .item{margin-left:0; color:#eee;}
+		.ia-legend .item em{color:#eee;}
+		/* Table */
+		.ia-tbl-wrap{border-top:solid 0 #96acbf; border-bottom:solid 1px #aaa;}
+		.ia-tbl-wrap table th,
+		.ia-tbl-wrap table td{ padding:7px 10px 3px 10px; font-size:12px; line-height:1.4; text-align:center; vertical-align:top;border-left:1px solid #e6e6e6;}
+		.ia-tbl-wrap table th{padding-bottom:5px; font-size:12px;font-weight:bold; vertical-align:top; border-bottom:1px solid #d9e3ea;border-left:1px solid #d9e3ea;background:#f4f8fb;}
+		.ia-tbl-wrap table td{color:#000; border-top:1px solid #e6e6e6;}
+		.ia-tbl-wrap table tr:first-child td{border-top:0;}
+		.ia-tbl-wrap table tr th:first-child,
+		.ia-tbl-wrap table tr td:first-child{border-left:0;}
+		.ia-tbl-wrap table tr th:first-child{padding-right:0;padding-left:0;}
+		.ia-tbl-wrap table tbody + tbody tr:first-child td{border-top:1px solid #aaa;}
+		.ia-tbl-wrap table td.col-url,
+		.ia-tbl-wrap table td.col-memo,
+		.ia-tbl-wrap table td.col-1depth,
+		.ia-tbl-wrap table td.col-2depth,
+		.ia-tbl-wrap table td.col-3depth,
+		.ia-tbl-wrap table td.col-type{text-align:left;}
+		.ia-tbl-wrap table td.col-url,
+		.ia-tbl-wrap table td.col-date{letter-spacing:0;}
+		.ia-tbl-wrap table td.col-memo .btn-memo{ font-size:12px; font-weight:500;vertical-align:top;}
+		.ia-tbl-wrap table td.col-memo .btn-memo:after{content:'+';display:inline-block;overflow:hidden;width:18px;height:18px;margin-top:-3px;margin-left:5px;line-height:18px;text-align:center;vertical-align:top;border:1px solid #bbb;background:#fff;}
+		.ia-tbl-wrap table td.col-memo.active .col-memo-con{display:block;margin:5px 0;}
+		.ia-tbl-wrap table td.col-memo.active .btn-memo:after{content:'-';color:#e05555;border:1px solid #bbb;}
+		.ia-tbl-wrap table td.col-memo.active{padding-bottom:0;}
+		.ia-tbl-wrap table td.col-memo .col-memo-con{display:none;}
+		.ia-tbl-wrap table .btn-memo-all{display:inline-block;overflow:hidden;height:14px;margin-left:5px;padding:2px 6px;font-size:10px;font-weight:bold;;line-height:10px;text-align:center;vertical-align:top;color:#fff;background:#777;}
+		.ia-tbl-wrap table .btn-memo-all:hover{ text-decoration:none; background:#000;}
+		.js-cate-group{ clear:both; margin:0 -40px; padding:5px 40px; line-height:20px; background:rgba(0, 0, 0, 0.6); }
+		.js-cate-group > li{ display:inline-block; height:16px; padding:0 2px; line-height:16px;}
+		.js-cate-group > li > a{ display:inline-block; position:relative; height:18px; padding:1px 5px; font-size:13px; line-height:18px; color:#fff;}
+		.js-cate-group > li > a .ico-update{margin-left:0; color:#32ff5f; background:none;}
+		.js-cate-group > li > a .ico-new{margin-left:0; color:#e2ff00; background:none;}
+		.js-cate-group > li > a:hover{ background:rgba(0, 0, 0, 0.3); }
+		/* Colgroup */
+		.ia-tbl-wrap table .col-num{width:30px; padding-right:0; padding-left:0;}
+		.ia-tbl-wrap table .col-1depth,
+		.ia-tbl-wrap table .col-2depth,
+		.ia-tbl-wrap table .col-3depth{width:10%;}
+		.ia-tbl-wrap table .col-url{width:450px;}
+		.ia-tbl-wrap table .col-date{width:75px; padding-right:0; padding-left:0;}
+		.ia-tbl-wrap table .col-complete{width:70px;}
+		.ia-tbl-wrap table .col-memo{width:30%;}
+		@media (max-width:1366px){
+			.ia-tbl-wrap table .col-url{width:auto;}
+			.ia-tbl-wrap table .col-date{width:100px;}
+			.ia-tbl-wrap table .col-memo{width:30%;}
+		}
+
+		@media screen and (max-width:640px){
+			.ia-legend{position:relative;left:0;}
+			.ia-tbl-wrap table thead{display:none;}
+			.ia-tbl-wrap table tr td{display:block;position:relative;width:100% !important;height:auto;min-height:30px;padding-left:95px !important;table-layout:fixed;text-align:left;border-top:none;border-bottom:1px solid #ccc;border-left:0;}
+			.ia-tbl-wrap table tbody + tbody tr:first-child td{border-top:0 solid #ccc;}
+			.ia-tbl-wrap table tr td:before{content:attr(data-label);display:inline-block;position:absolute;top:0;left:0;width:90px;height:100%;padding:0.3em 0.5em;text-align:left;background:#f4f8fb;}
+			.ia-tbl-wrap table tr td .text{display:table-cell;padding:0.3em 0.5em;word-break:break-all;}
+			.ia-tbl-wrap table tr td:last-child{border-bottom:2px solid #96acbf;}
+		}
+		@media only screen and (max-width:720px){
+			.ia-header-wrapper{height:80px;}
+			.ia-header-wrapper .ia-section{padding:10px 10px 0; line-height:20px;}
+			.ia-header-wrapper .ia-section,
+			.ia-h1{width:100%;line-height:20px; text-align:center; vertical-align:top;box-sizing:border-box;}
+			.ia-h1{display:inline-block; float:none; width:auto !important; height:20px; margin-bottom:5px; font-size:14px; font-weight:600;line-height:20px; vertical-align:top;}
+			.ia-header-wrapper{height:auto !important;}
+			.ia-header-wrapper .ia-guide-link{float:none;}
+			.ia-section-header{ padding-bottom:17px;}
+			.js-cate-group{display:block; float:none; width:auto; margin:0 -10px; padding:10px;}
+			.js-cate-group > li{letter-spacing:-0.5px}
+			.js-cate-group > li > a{padding:0 3px;}
+			.ia-section{padding:0 10px}
+			.ia-content-body{padding:120px 10px 50px}
+			.ia-header-wrapper .ia-guide-link{display:none;}
+			.ia-header-wrapper .ia-header-guide-mobile{display:block; float:right; width:40%;}
+			.ia-header-guide-mobile{ position:absolute;top:0;right:0;width:100%;}
+			.ia-header-guide-mobile > .g-node-title{display:inline-block; position:absolute; top:0; width:100%; padding:10px 10px; line-height:1.4;
+				color:#0d3258;background-color:#fff;}
+			.ia-header-guide-mobile > ul{display:none;margin-top:35px;}
+			.ia-header-guide-mobile > ul > li{display:none;line-height:1.4;text-align:center;background-color:#000;}
+			.ia-header-guide-mobile > ul > li > a{display:inline-block;padding:10px 10px;font-size:11px;color:#fff;}
+			.ia-header-guide-mobile.is-visible > ul,
+			.ia-header-guide-mobile.is-visible > ul > li{display:block;}
+		}
+		.ia-desc{line-height:1.6;}
+		/* Setting */
+		.c-done > *{font-weight:bold; color:rgb(255, 104, 104) !important;}
+		td.col-url a{text-decoration:none;}
+		td.col-url a:hover{text-decoration:underline;color:#000;}
+		.ia-tbl-wrap table tr.row-del td,
+		.ia-tbl-wrap table tr.row-del td a{text-decoration:none; color:#ddd; border-bottom:0; }
+		.ia-tbl-wrap table tr.row-del td a .btn-memo{display:none;}
+		.ia-tbl-wrap table tr.row-done td{background-color:#e7f5ff;}
+		.ia-tbl-wrap table tr.row-done:hover td{background:#cfebff;}
+		.ia-tbl-wrap table tr.row-done-update td{background-color:#dcf5e7;}
+		.ia-tbl-wrap table tr.row-done-update:hover td{background-color:#cff1de;}
+		.ia-tbl-wrap table tr.row-done-new td{background-color:#fff6d6;}
+		.ia-tbl-wrap table tr.row-done-new:hover td{background-color:#ffedae;}
+		.state{display:inline-block;height:20px;padding:0 5px;font-size:12px;font-weight:bold;color:#000;}
+		.state.row-done{background-color:#e7f5ff;}
+		.state.row-done-update{background-color:#dcf5e7;}
+		.state.row-done-new{background-color:#fff6d6;}
+		.d-none{display:none !important;}
+	</style>
+	<script>
+	function funcIAMenuDropdown() {
+		$('.ia-header-guide-mobile').toggleClass('is-visible');
+	}
+	</script>
+
+</head>
+<body data-theme-color="#072981">
+<div class="ia-wrapper">
+	<div class="ia-header-wrapper">
+		<div class="ia-section">
+			<h1 class="ia-h1">힐리언스 랩 아카데미 프론트</h1>
+			<div class="ia-guide-link" style="display:none">
+				<a class="is-active" href="../FO/index.html">BO</a>
+				<!--<a href="../BO/index.html">Admin</a>-->
+			</div>
+			<nav class="ia-header-guide-mobile" onclick="funcIAMenuDropdown();" style="display:none">
+				<!--<button class="g-node-title" type="button">WeB-Mall</button>-->
+				<ul>
+					<li class="is-current"><a href="../FO/index.html">BP</a></li>
+					<!--<li><a href="../BO/index.html">Admin</a></li>-->
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="ia-container">
+		<div class="ia-content">
+
+			<div class="ia-content-body">
+
+
+				<!-- Note -->
+				<section class="ia-section">
+					<div class="ia-note-wrap">
+						<div class="ia-box ia-box-note">
+							<div class="ia-box-header">
+								<h4 class="ia-h4">Note</h4>
+							</div>
+							<div class="ia-box-body">
+								<ul class="ia-desc">
+									<li>※ 유형 표시방법 - Html, LP : Layer Popup, WP : Window Popup</li>
+									<li>※ IA 기준으로 목록 업데이트 필요</li>
+									<li>1. 진척관리 - 최초 완료표시 기준으로 날짜를 표시</li>
+									<li>2. 수정관리 - 최조 완료표시 날짜에 [YY-MM-DD / (br) YY-MM-DD]수정날짜를 추가한다.</li>
+									<li>3. 결함관리 - 신규/수정/삭제 이슈가 있는 경우 소스코드와 비고란에 동일한 주석문구를 표시한다. (주석표기 예시 - 181130 홍길동 작업내용 수정)</li>
+									<li>4. 최조 완료시 상태항목에 [완료]</li>
+									<li>5. 상태값에 [완료] 문구 등록시 완료페이지로 표시됨.</li>
+									<li>6. Row 컬러 상태
+										<span class="state row-done-new">최신완료 </span>
+										<span class="state row-done-update">기존완료지만 추가수정됨 </span>
+										<span class="state row-done">이전완료 </span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //Note -->
+				<!-- Total -->
+				<section class="ia-section">
+					<div class="ia-section-body">
+						<div class="ia-h4 ia-total-legend">
+							<span class="item c-last-date"><em>최종수정일 : </em><em class="value">1</em> /</span>
+							<span class="item c-total"><em>총 페이지 : </em><em class="value">30</em> /</span>
+							<span class="item c-done"><em>총 완료 : </em><em class="value">1</em> (</span>
+							<span class="item c-done-new"><em>신규완료 : </em><em class="value">1</em> /</span>
+							<span class="item c-done-update"><em>수정완료 : </em><em class="value">1</em> )</span>
+						</div>
+						<div class="ia-graph">
+							<ul class="graph"></ul>
+						</div>
+					</div>
+				</section>
+				<!-- //Total -->
+
+				<!-- 00_Guide -->
+				<section class="ia-section ia-section-list">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a class="ui-accordion-toggle" href="#this">가이드</a></h2>
+						<div class="ia-legend">
+							<span class="item"><em>총 페이지 : </em><em class="legend-total">30</em> /</span>
+							<span class="item c-done"><em>완료 : </em><em class="legend-complete">1</em> /</span>
+							<span class="item"><em>진척률 : </em><em class="legend-process">3%</em></span>
+						</div>
+					</div>
+					<div class="ia-section-body">
+						<div class="ia-tbl-wrap">
+							<table>
+								<caption></caption>
+								<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th class="col-1depth" scope="col">1Depth</th>
+									<th class="col-2depth" scope="col">2Depth</th>
+									<th class="col-3depth" scope="col">3Depth</th>
+									<th class="col-point" scope="col">유형</th>
+									<th scope="col">URL</th>
+									<th class="col-date" scope="col">날짜</th>
+									<th scope="col">상태</th>
+									<th scope="col">비고</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="col-num" data-label="번호"></td>
+									<td class="col-1depth" data-label="1Depth">가이드</td>
+									<td class="col-2depth" data-label="2Depth">레이아웃</td>
+									<td class="col-3depth" data-label="3Depth"></td>
+									<td class="col-type" data-label="유형"></td>
+									<td class="col-url" data-label="URL"><a href="dist/00_common__01_layout.html" target="_blank"></a>
+									</td>
+									<td class="col-date" data-label="날짜">22-12-30/<br>23-01-17</td>
+									<td class="col-complete" data-label="상태">완료</td>
+									<td class="col-memo" data-label="비고">
+										<button class="btn-memo" type="button">Comment</button>
+										<div class="col-memo-con">
+											[230117] 신규 테마 이용한 레이아웃 수정
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="col-num" data-label="번호"></td>
+									<td class="col-1depth" data-label="1Depth">가이드</td>
+									<td class="col-2depth" data-label="2Depth">컴포넌트</td>
+									<td class="col-3depth" data-label="3Depth"></td>
+									<td class="col-type" data-label="유형"></td>
+									<td class="col-url" data-label="URL"><a href="dist/00_common__02_componets.html" target="_blank"></a>
+									</td>
+									<td class="col-date" data-label="날짜">23-01-17</td>
+									<td class="col-complete" data-label="상태">완료</td>
+									<td class="col-memo" data-label="비고">
+										<button class="btn-memo" type="button">Comment</button>
+										<div class="col-memo-con"></div>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<!-- //00_Guide -->
+
+				<!-- 01_공통 -->
+				<section class="ia-section ia-section-list">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a class="ui-accordion-toggle" href="#this">공통</a></h2>
+						<div class="ia-legend">
+							<span class="item"><em>총 페이지 : </em><em class="legend-total">30</em> /</span>
+							<span class="item c-done"><em>완료 : </em><em class="legend-complete">1</em> /</span>
+							<span class="item"><em>진척률 : </em><em class="legend-process">3%</em></span>
+						</div>
+					</div>
+					<div class="ia-section-body">
+						<div class="ia-tbl-wrap">
+							<table>
+								<caption></caption>
+								<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th class="col-1depth" scope="col">1Depth</th>
+									<th class="col-2depth" scope="col">2Depth</th>
+									<th class="col-3depth" scope="col">3Depth</th>
+									<th class="col-point" scope="col">유형</th>
+									<th scope="col">URL</th>
+									<th class="col-date" scope="col">날짜</th>
+									<th scope="col">상태</th>
+									<th scope="col">비고</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="col-num" data-label="번호"></td>
+									<td class="col-1depth" data-label="1Depth">로그인</td>
+									<td class="col-2depth" data-label="2Depth"></td>
+									<td class="col-3depth" data-label="3Depth"></td>
+									<td class="col-type" data-label="유형"></td>
+									<td class="col-url" data-label="URL"><a href="" target="_blank"></a>
+									</td>
+									<td class="col-date" data-label="날짜">23-01-20</td>
+									<td class="col-complete" data-label="상태">완료</td>
+									<td class="col-memo" data-label="비고">
+										<button class="btn-memo" type="button">Comment</button>
+										<div class="col-memo-con">
+										</div>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<!-- //공통 -->
+
+				<!-- 02_교육 -->
+				<section class="ia-section ia-section-list">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a class="ui-accordion-toggle" href="#this">교육</a></h2>
+						<div class="ia-legend">
+							<span class="item"><em>총 페이지 : </em><em class="legend-total">30</em> /</span>
+							<span class="item c-done"><em>완료 : </em><em class="legend-complete">1</em> /</span>
+							<span class="item"><em>진척률 : </em><em class="legend-process">3%</em></span>
+						</div>
+					</div>
+					<div class="ia-section-body">
+						<div class="ia-tbl-wrap">
+							<table>
+								<caption></caption>
+								<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th class="col-1depth" scope="col">1Depth</th>
+									<th class="col-2depth" scope="col">2Depth</th>
+									<th class="col-3depth" scope="col">3Depth</th>
+									<th class="col-point" scope="col">유형</th>
+									<th scope="col">URL</th>
+									<th class="col-date" scope="col">날짜</th>
+									<th scope="col">상태</th>
+									<th scope="col">비고</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="col-num" data-label="번호"></td>
+									<td class="col-1depth" data-label="1Depth">교육</td>
+									<td class="col-2depth" data-label="2Depth">나의 교육</td>
+									<td class="col-3depth" data-label="3Depth">목록</td>
+									<td class="col-type" data-label="유형"></td>
+									<td class="col-url" data-label="URL"><a href="dist/02_education__01_myedu___01_list.html" target="_blank"></a>
+									</td>
+									<td class="col-date" data-label="날짜">22-12-30/<br>23-01-17</td>
+									<td class="col-complete" data-label="상태">완료</td>
+									<td class="col-memo" data-label="비고">
+										<button class="btn-memo" type="button">Comment</button>
+										<div class="col-memo-con">
+											[230102] Breadcrumb삭제, 제목->교육제목 label 값 수정<br>
+											[230117] 레이아웃 수정, 컴포넌트 class 수정
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="col-num" data-label="번호"></td>
+									<td class="col-1depth" data-label="1Depth">교육</td>
+									<td class="col-2depth" data-label="2Depth">나의 교육</td>
+									<td class="col-3depth" data-label="3Depth">상세</td>
+									<td class="col-type" data-label="유형"></td>
+									<td class="col-url" data-label="URL"><a href="dist/02_education__01_myedu___02_detail.html" target="_blank"></a>
+									</td>
+									<td class="col-date" data-label="날짜">23-01-02/<br>23-01-17</td>
+									<td class="col-complete" data-label="상태">완료</td>
+									<td class="col-memo" data-label="비고">
+										<button class="btn-memo" type="button">Comment</button>
+										<div class="col-memo-con">
+											[230117] 레이아웃 수정, 컴포넌트 class 수정
+										</div>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<!-- //02_교육 -->
+
+				<!-- 05_교육 관리 -->
+				<section class="ia-section ia-section-list">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a class="ui-accordion-toggle" href="#this">교육 관리</a></h2>
+						<div class="ia-legend">
+							<span class="item"><em>총 페이지 : </em><em class="legend-total">30</em> /</span>
+							<span class="item c-done"><em>완료 : </em><em class="legend-complete">1</em> /</span>
+							<span class="item"><em>진척률 : </em><em class="legend-process">3%</em></span>
+						</div>
+					</div>
+					<div class="ia-section-body">
+						<div class="ia-tbl-wrap">
+							<table>
+								<caption></caption>
+								<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th class="col-1depth" scope="col">1Depth</th>
+									<th class="col-2depth" scope="col">2Depth</th>
+									<th class="col-3depth" scope="col">3Depth</th>
+									<th class="col-point" scope="col">유형</th>
+									<th scope="col">URL</th>
+									<th class="col-date" scope="col">날짜</th>
+									<th scope="col">상태</th>
+									<th scope="col">비고</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="col-num" data-label="번호"></td>
+									<td class="col-1depth" data-label="1Depth">교육 관리</td>
+									<td class="col-2depth" data-label="2Depth">교육 등록 관리</td>
+									<td class="col-3depth" data-label="3Depth">교육 수정</td>
+									<td class="col-type" data-label="유형"></td>
+									<td class="col-url" data-label="URL"><a href="dist/04_edu_manage__03_educational___02_update.html" target="_blank"></a>
+									</td>
+									<td class="col-date" data-label="날짜">23-01-31</td>
+									<td class="col-complete" data-label="상태"></td>
+									<td class="col-memo" data-label="비고">
+										<button class="btn-memo" type="button">Comment</button>
+										<div class="col-memo-con">
+										</div>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<!-- //05_교육 관리 -->
+
+				<!-- 06_시스템 관리-->
+				<section class="ia-section ia-section-list">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a class="ui-accordion-toggle" href="#this">시스템 관리</a></h2>
+						<div class="ia-legend">
+							<span class="item"><em>총 페이지 : </em><em class="legend-total">30</em> /</span>
+							<span class="item c-done"><em>완료 : </em><em class="legend-complete">1</em> /</span>
+							<span class="item"><em>진척률 : </em><em class="legend-process">3%</em></span>
+						</div>
+					</div>
+					<div class="ia-section-body">
+						<div class="ia-tbl-wrap">
+							<table>
+								<caption></caption>
+								<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th class="col-1depth" scope="col">1Depth</th>
+									<th class="col-2depth" scope="col">2Depth</th>
+									<th class="col-3depth" scope="col">3Depth</th>
+									<th class="col-point" scope="col">유형</th>
+									<th scope="col">URL</th>
+									<th class="col-date" scope="col">날짜</th>
+									<th scope="col">상태</th>
+									<th scope="col">비고</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="col-num" data-label="번호"></td>
+									<td class="col-1depth" data-label="1Depth">시스템 관리</td>
+									<td class="col-2depth" data-label="2Depth">사용자 관리</td>
+									<td class="col-3depth" data-label="3Depth">그룹관리</td>
+									<td class="col-type" data-label="유형"></td>
+									<td class="col-url" data-label="URL"><a href="dist/06_system__01_user___01_group.html" target="_blank"></a>
+									</td>
+									<td class="col-date" data-label="날짜">23-01-03/<br>23-01-31</td>
+									<td class="col-complete" data-label="상태">완료</td>
+									<td class="col-memo" data-label="비고">
+										<button class="btn-memo" type="button">Comment</button>
+										<div class="col-memo-con">
+											[230131] 개발에서 사용한 플러그인으로의 트리메뉴 교체 / css, js 커스텀(파일 내 스크립트 확인)
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="col-num" data-label="번호"></td>
+									<td class="col-1depth" data-label="1Depth">시스템 관리</td>
+									<td class="col-2depth" data-label="2Depth">사용자 관리</td>
+									<td class="col-3depth" data-label="3Depth">사용자 등록</td>
+									<td class="col-type" data-label="유형"></td>
+									<td class="col-url" data-label="URL"><a href="dist/06_system__03_user___02_update.html" target="_blank"></a>
+									</td>
+									<td class="col-date" data-label="날짜">23-01-31</td>
+									<td class="col-complete" data-label="상태"></td>
+									<td class="col-memo" data-label="비고">
+										<button class="btn-memo" type="button">Comment</button>
+										<div class="col-memo-con">
+										</div>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<!-- //06_시스템 관리 -->
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+
+$(document).ready(function () {
+	ia.init();
+});
+
+
+function funcIAMenuDropdown() {
+	$('.ia-header-guide-mobile').toggleClass('is-visible');
+}
+
+var ia = {
+	init: function () {
+		var _this = this;
+		var _color = $('body').data('theme-color');
+		$('.ia-header-wrapper').css('background-color', _color);
+		$('.ia-header-wrapper > .ia-section').append('<ul class="js-cate-group"></ul>');
+
+
+		$('[data-label="URL"]').each(function () { // kimkee추가
+			var url = $(this).find(">a").attr("href");
+			$(this).find(">a").text(url);
+		});
+
+		$('.ia-section-list').each(function (i) {
+			var file = $(this).data('file');
+			var color = $(this).data('color');
+			var graphHtml =
+				'<li>'
+				+ '	<a href="#gIA' + i + '">'
+				+ '		<span class="tit"><!-- 자동입력 --></span>'
+				+ '		<span class="bar" data-color="' + _color + '"><span class="active"></span></span>'
+				+ '		<span class="pages"><em class="graph-complete"></em>/<em class="graph-total"></em></span>'
+				+ '	</a>'
+				+ '</li>';
+
+			$(this).attr('id', 'gIA' + i);
+			$('.ia-graph .graph').append(graphHtml);
+
+			_this.cal('#gIA' + i, i);
+
+			var new_len = $('#gIA' + i).find('.row-done-new').length;
+			var update_len = $('#gIA' + i).find('.row-done-update').length;
+			var cate_group_txt = (new_len == 0) ? "" : '<span class="ico-new">N(' + new_len + ')</span>';
+			cate_group_txt = (update_len == 0) ? cate_group_txt : cate_group_txt + '<span class="ico-update">U(' + update_len + ')</span>';
+
+			var cateHtml =
+				'<li>'
+				+ '	<a href="#gIA' + i + '">' + $(this).find('.ia-h2 > a').html() + cate_group_txt
+				+ '	</a>'
+				+ '</li>';
+
+			$('.js-cate-group').append(cateHtml);
+			$('.ia-content-body').css('padding-top', $('.ia-header-wrapper').outerHeight());
+			$('.ia-content-body .ia-section-list').css('padding-top', $('.ia-header-wrapper').outerHeight());
+
+
+		}).promise().done(function () {
+
+			//console.log ( 'len',  $('.ia-tbl-wrap').find('.row-done-new').length );
+			$(".ia-total-legend .c-total .value").text($('.ia-tbl-wrap').find('tbody > tr > .col-num').length - $('.ia-tbl-wrap').find('.row-del').length);
+			$(".ia-total-legend .c-done .value").text($('.ia-tbl-wrap').find('.row-done').length + $('.ia-tbl-wrap').find('.row-done-new').length + $('.ia-tbl-wrap').find('.row-done-update').length);
+			$(".ia-total-legend .c-done-new .value").text($('.ia-tbl-wrap').find('.row-done-new').length);
+			$(".ia-total-legend .c-done-update .value").text($('.ia-tbl-wrap').find('.row-done-update').length);
+
+
+			$('.ia-section-header').on('click', function () {
+				$(this).parents('.ia-section').toggleClass('is-hide');
+			})
+		});
+
+
+	},
+	cal: function (obj, idx) {
+
+
+		var lastUpdateDate = String(findLastUpdateDate(obj));//날짜중 최종완료날짜 찾아옴
+		//console.log(lastUpdateDate);
+		var today = lastUpdateDate.substr(0, 2) + '-' + lastUpdateDate.substr(2, 2) + '-' + lastUpdateDate.substr(4, 2);
+
+		$(obj).find('td.col-complete').each(function (n) {
+
+			var text = $(this).text();
+			var completedd = $(this).siblings('.col-date').text().toString();
+			//완료,수정날짜있는경우 마지막날짜로 체크
+			var lastdate = (completedd.indexOf('/') == -1) ? completedd.trim() : completedd.toString().split('/')[1].trim();
+			//console.log(lastdate, today);
+			if ((completedd.indexOf('/') == -1) && text == "완료" && lastdate == today.toString()) {
+				$(this).parent('tr').addClass('row-done-new');//노란색
+			} else if ((completedd.indexOf('/') != -1) && lastdate == today.toString()) {
+				$(this).parent('tr').addClass('row-done-update');//초록색
+				$(this).text('수정');
+			} else if (text == "완료") {
+				$(this).parent('tr').addClass('row-done');//하늘색
+			} else if (text == "삭제") {
+				$(this).parent('tr').addClass('row-del');//
+				$(this).parent('tr').find('.col-memo').empty();
+			} else if (text == "사용안함") {
+				$(this).parent('tr').addClass('row-del');//
+			}
+		})
+
+		//console.log(lastUpdateDate, today);
+
+		//계산
+		var cal_total = $(obj).find('.ia-tbl-wrap tbody > tr > .col-num').length;//총페이지갯수
+		var cal_complete = $(obj).find('.row-done , .row-done-update, .row-done-new, .row-del').length;//완료페이지
+		var cal_process = Math.round((cal_complete / cal_total) * 100);
+
+		var new_len = $(obj).find('.row-done-new').length;
+		var update_len = $(obj).find('.row-done-update').length;
+		var cal_total_txt = (new_len == 0) ? cal_total : cal_total + '<span class="ico-new">New(' + new_len + ')</span>';
+		cal_total_txt = (update_len == 0) ? cal_total_txt : cal_total_txt + '<span class="ico-update">Update(' + update_len + ')</span>';
+
+
+		//그래프
+		var graph = $('.ia-graph a[href="' + obj + '"]');
+		var graph_tit = $(graph).find('.tit');
+		var graph_total = $(graph).find('.graph-total');
+		var graph_complete = $(graph).find('.graph-complete');
+		var graph_process = $(graph).find('.bar');
+		var graph_active = $(graph).find('.bar .active');
+		graph_total.html(cal_total_txt);
+		graph_complete.html(cal_complete);
+		graph_process.attr('data-process', cal_process + '%');
+		graph_active.css({backgroundColor: graph_process.data('color'), width: cal_process + '%'});
+
+		//범례
+		var legend_total = $(obj).find('.legend-total');
+		var legend_complete = $(obj).find('.legend-complete');
+		var legend_process = $(obj).find('.legend-process');
+		legend_total.text(cal_total);
+		legend_complete.text(cal_complete);
+		if (cal_complete > 0) {
+			legend_process.text(cal_process + '%')
+		} else {
+			legend_process.text('0%')
+		}
+
+		//리스트
+		var ia_num = $(obj).find('.col-num');
+		graph_tit.html(ia_tit);
+
+		//넘버링
+		for (var i = 0; i < cal_total; i++) {
+			ia_num.eq(i).text(i + 1);
+		}
+
+		/*20190516 update*/
+		//리스트
+		var ia_tit = $(obj).find('.ia-h2 > a').text();
+		$(obj).find('.ia-h2 > a').text('#' + idx + " " + ia_tit);
+		graph_tit.html('#' + idx + " " + ia_tit);
+
+		$(".ia-total-legend .c-last-date .value").text(lastUpdateDate);
+
+		$(obj).find("button.btn-memo").each(function () {
+			if ($(this).closest("tr").hasClass("row-done-new") || $(this).closest("tr").hasClass("row-done-update")) {
+				$(this).closest('tr').find(".col-memo").toggleClass("active");
+			}
+			;
+			$(this).click(function () {
+				$(this).closest('tr').find(".col-memo").toggleClass("active");
+				return false;
+			});
+		});
+
+		$(obj).find('.btn-memo-all').click(function () {
+			if ($(this).parents('table').find(".col-memo.active").length > 0) {
+				$(this).parents('table').find(".col-memo").removeClass("active");
+			} else {
+				$(this).parents('table').find(".col-memo").addClass("active");
+			}
+
+		});
+
+	}
+};
+
+
+function numReturnToZero(a) {
+	if (a < 10) {
+		a = '0' + a;
+	}
+	return a;
+}
+
+function findLastUpdateDate(obj) {
+
+	var maxdd = 0;
+	var lastdate = 0;
+	$('td.col-date').each(function (n) {
+		var completedd = $(this).text().split('-').join("").trim();
+		completedd = completedd.replace(/ /gi, "");
+		lastdate = (completedd.indexOf('/') == -1) ? Number(completedd) : Number(completedd.toString().split('/')[1]);
+		lastdate = (lastdate.toString().length > 6) ? Number(lastdate.toString().substring(6, 6)) : lastdate;//20200313 case add
+		maxdd = Math.max(lastdate, maxdd);
+		//console.log ("---------------", lastdate, completedd, maxdd);
+	});
+	//console.log ( "--------------------recent----",  maxdd );
+	return maxdd;
+
+}
+
+function trim(x) {
+	return x.replace(/^\s+|\s+$/gm, '');
+}
+
+</script>
+
+</body>
+</html>

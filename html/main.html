@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>메인</title>
-    <link rel="stylesheet" href="/assets/libs/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/css/base/reset.css">
-    <link rel="stylesheet" href="/assets/css/common.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <script type="text/javascript" src="/assets/libs/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="/assets/libs/swiper/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="/assets/js/common.js"></script>
+    <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script type="text/javascript" src="../assets/libs/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../assets/js/common.js"></script>
 </head>
 <body>
     <div id="main" class="wrap">
         <!-- #include | header -->
-        <div data-include-path="/html/include/header.html"></div>
+        <div data-include-path="include/header.html"></div>
 
         <div class="container">
             <div class="inner">
@@ -27,10 +27,10 @@
                 
                 <!-- 커리큘럼 -->
                 <article class="curri">
-                    <a href="" style="height: 200px;">
+                    <a href="">
                         <strong></strong>
                     </a>
-                    <a href="" style="height: 200px;">
+                    <a href="">
                         <strong></strong>
                     </a>
                 </article>
@@ -42,26 +42,7 @@
         </div>
 
         <!-- #include | footer -->
-        <div data-include-path="/html/include/footer.html"></div>
+        <div data-include-path="include/footer.html"></div>
     </div>
-
-    <script>
-        // swiper.js
-        var bullet = ['힐리언스랩 스토리', '카더바란?', '해부 아카데미', '의학 전문의 강사'];
-        var swiper = new Swiper(".video-swiper", {
-            speed: 600,
-            parallax: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (bullet[index]) + "</span>";
-                }
-            },
-            scrollbar: {
-                el: ".swiper-scrollbar",
-            }
-        });
-      </script>
 </body>
 </html>

@@ -11,5 +11,4 @@
 .video-swiper{height: 500px;}
 
 /* 커리큘럼 article */
-.curri{display: flex; gap: 0 100px; margin-top: 100px;}
-.curri a{display: block; flex: 1; background: lightcoral;}
+.curri{display: flex;}
