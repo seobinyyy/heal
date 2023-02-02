@@ -31,10 +31,8 @@ $(function(){
     var $btnModal = $(".btn-modal");
     var $modal = $(".modal");
     $btnModal.on("click", function(){
-        if($(this).attr("data-show") == $modal.attr("id")){
-            var dataShow = $(this).attr("data-show");
-            $modal.attr("id",dataShow).show();
-        }
+        var dataShow = $(this).attr("data-show");
+        $("#"+dataShow).show();
     });
     
     // 모달창 닫기
@@ -51,10 +49,46 @@ $(function(){
     if(isMobile()) {
         // mobile only code
         console.log("mobile");
+
+        var addition_constant = 0;
+        $(document.body).on('touchmove', onScroll); // for mobile
+        $(window).on('scroll', onScroll);
+
+        function onScroll() {
+            var addition = ($(window).scrollTop());
+            // var scrollHeight = (document.body.scrollHeight - 1);
+            // if (addition > scrollHeight && addition_constant < addition) {
+            if (addition < 50) {
+                // addition_constant = addition;
+
+                // loadmorecontest();
+
+                console.log("1");
+                $("header").removeClass("on");
+            }else{
+                console.log("2");
+                $("header").addClass("on");
+            }
+        }
+        
     } else {
         // pc only code
         console.log("pc");
+        $("header .dep01").mouseover(function(){
+            $("header").addClass("hover");
+        }).mouseleave(function(){
+            $("header").removeClass("hover");
+        });
     }
+
+    $(window).on("scroll", function() {
+        var winoffset = $(window).scrollTop();
+        if (winoffset > 50) {
+            $("header").addClass("on");
+        }else{
+            $("header").removeClass("on");
+        }
+    });
 
     // 모바일 | 헤더메뉴 열기
     $(".btn-nav-menu").on("click", function(){

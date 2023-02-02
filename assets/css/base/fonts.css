@@ -1,0 +1,9 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@font-face {
+	font-family: 'montserrat';
+	font-weight: 700;
+	font-display: swap;
+	src: url('../../fonts/montserrat-bold-webfont.woff') format('woff');
+}
+
+body{font-family: 'Spoqa Han Sans', 'dotum', "돋움", sans-serif;}

@@ -1,3 +1,6 @@
+/* 컬러 */
+.txt-warning{}
+
 /* 인풋 */
 
 /* 리스트 */
@@ -6,10 +9,11 @@
 
 /* 모달 */
 .modal{display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;}
-.modal .dimmed{position: absolute; top: 0; left: 0; width: 100; height: 100%; background: rgba(0, 0, 0, 0.6);}
+.modal .dimmed{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6);}
 .modal.active{display: block;}
-.modal .modal-dialog{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-.modal .modal-header{}
+.modal .modal-dialog{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; border-radius: 10px;}
+.modal .modal-header{display: flex;}
 .modal .modal-header strong{}
+.modal .modal-header button{margin-left: auto;}
 .modal .modal-body{}
 .modal .modal-footer{}

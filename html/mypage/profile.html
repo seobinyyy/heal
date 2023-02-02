@@ -36,7 +36,7 @@
                                 </tr>
                                 <tr>
                                     <th>비밀번호 <em>*</em></th>
-                                    <td><button type="button">비밀번호 수정</button></td>
+                                    <td><button type="button" class="btn-modal" data-show="modalPwRe">비밀번호 수정</button></td>
                                 </tr>
                                 <tr>
                                     <th>이름 <em>*</em></th>
@@ -64,27 +64,70 @@
 
         <!-- #include | footer -->
         <div data-include-path="../include/footer.html"></div>
+    </div>
+    
+    <!-- modal -->
+    <div id="modalWithdraw" class="modal">
+        <div class="dimmed"></div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-header">
+                <strong>탈퇴하기</strong>
+                <button type="button" class="" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <label for="">비밀번호</label>
+                    <input type="password" placeholder="비밀번호 입력">
+                </div>
+                <em>비밀번호가 일치하지 않습니다.</em>
+            </div>
+            <div class="modal-footer">
+                <div class="btns">
+                    <button type="button" data-dismiss="modal">취소</button>
+                    <button type="submit" class="">탈퇴</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- modal -->
-        <div id="modalWithdraw" class="modal">
-            <div class="dimmed"></div>
-            <div class="modal-dialog" role="document">
-                <div class="modal-header">
-                    <strong>탈퇴하기</strong>
-                    <button type="button" class="" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div>
-                        <label for="">비밀번호</label>
-                        <input type="password" placeholder="비밀번호 입력">
-                    </div>
-                    <em>비밀번호가 일치하지 않습니다.</em>
-                </div>
-                <div class="modal-footer">
-                    <div class="btns">
-                        <button type="button" data-dismiss="modal">취소</button>
-                        <button type="submit" class="">탈퇴</button>
-                    </div>
+    <!-- modal -->
+    <div id="modalPwRe" class="modal">
+        <div class="dimmed"></div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-header">
+                <strong>비밀번호 수정</strong>
+                <button type="button" class="" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>현재 비밀번호 <em>*</em></th>
+                            <td>
+                                <input type="password" placeholder="현재 비밀번호">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>신규 비밀번호 <em>*</em></th>
+                            <td>
+                                <input type="password" placeholder="신규 비밀번호">
+                                <em class="txt-warning">비밀번호는 최소 8자 이상 16자 이하 영문자, 숫자, 특수 문자 조합을 입력해야합니다.</em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>신규 비밀번호 확인 <em>*</em></th>
+                            <td>
+                                <input type="password" placeholder="신규 비밀번호 확인">
+                                <em class="txt-warning">비밀번호가 일치하지 않습니다.</em>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <div class="btns">
+                    <button type="button" data-dismiss="modal">취소</button>
+                    <button type="submit" class="">수정</button>
                 </div>
             </div>
         </div>
