@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+
+:root{
+	--prime-color: #0752dd;
+}
+
+/* 공통 컴포넌트*/
+.tbl > strong{font-size: 18px;}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="tel"],
+input[type="number"]{padding: 0 10px;}
+
+header .inner{border-bottom: 1px solid #d7d7d7;}
+
+/* 기간 선택 버튼 */
+.term-btns{gap: 0;}
+.term-btns label{}
+.term-btns label input{width: 0; height: 0; position: absolute; top: -3em; left: 0;}
+.term-btns label span{display: inline-block; padding: 8px 12px; border: 1px solid #d5d9e5; font-size: 0.8rem; margin-left: -1px; position: relative; z-index: 0; cursor: pointer;}
+.term-btns label input:checked + span{border: 1px solid var(--main-color); z-index: 1;}
+.term-btns label:first-child span{margin-left: 0;}
+
+.container{padding: 120px 0 0 0;}
+.container > .inner{display: flex; max-width: 1250px; margin: auto; padding: 60px 20px; gap: 0 80px;}
+
+aside{}
+aside strong{font-size: 2.3rem; font-weight: 400;}
+aside ul{margin-top: 40px;}
+aside ul li a{padding: 10px 0; font-weight: bold; color: #9ca1af;}
+aside ul li a.active{color: var(--main-color);}
+
+.content{flex: 1; padding-top: 10px;}
+.content h2{font-size: 1.5rem; margin-bottom: 30px;}
+
+/* 개인정보 */
+.profile-wrap{}
+.profile-wrap .btns{margin-top: 60px;}
+.profile-wrap .btns .btn{width: 220px;}
+
+/* 결제내역 */
+.pay-list{}
+.pay-list h2 + .tbl{margin-top: 30px;}
+.pay-list .tbl{margin-top: 60px;}
+.pay-list .tbl > strong{display: block; margin-bottom: 20px;}
+.pay-list .tbl table{font-size: 14px;}
+.pay-list .tbl table tbody td{padding: 12px 8px;}
+.pay-list .datepicker{margin-left: 50px; margin-right: 10px;}
+
+/* 환불 요청 */
+.refund-re{}
+.refund-re h2 + .tbl{margin-top: 30px;}
+.refund-re .tbl{margin-top: 60px;}
+.refund-re .tbl > strong{display: block; margin-bottom: 20px;}
+.refund-re .tbl table{font-size: 14px;}
+.refund-re .tbl table tbody td{padding: 12px 8px;}
+.refund-re .chk-lst{margin-top: 20px;}
+.refund-re .btns{margin-top: 60px;}
+
+.trems-info{margin-top: 40px;}
+.trems-info > strong{display: block; margin-bottom: 20px; font-size: 18px;}
+.trems-info ul li{margin-bottom: 10px;}
+
+/* 내강의실 */
+.my-class table th strong{font-size: 1.5rem;}
+.my-class table th span{font-size: 0.9rem; font-weight: normal;}
+.my-class table th .btns{margin-top: 20px;}
+.my-class table td span{margin-left: auto;}
+.my-class table td .flex{align-items: center;}
+.my-class table td:last-child{text-align: center;}
+.my-class table dl dt{}
+.my-class table dl dd{font-size: 14px; margin-top: 5px;}
+
+
+/* 모달창 (어쩔 수 없이 각각 스타일 다르게 먹히는..... 후) */
+#modalPwRe .tbl{width: 800px;}
+
+/* +++++++++++++++++++ */
+/* 모바일 기기가 아닌 태그에 :hover 스타일 적용 */
+/* +++++++++++++++++++ */
+@media (hover: hover) {
+	header nav .dep01:hover ~ .back-bg{border-top: 0;}
+}

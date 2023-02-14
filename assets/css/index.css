@@ -1,0 +1,76 @@
+*{font-size: 16px;}
+
+/* 메인 | 헤더 */
+header h1 a{background: url(/assets/images/logo.png) no-repeat 0 0/100% auto;}
+header nav .util-menu a{color: #fff;}
+header nav .dep01 > a{color: #fff;}
+
+/* 컨테이너 */
+.container article{overflow: hidden;}
+
+/* 컨테이너 | 각 섹션 배경 */
+.visual01{background: url(../images/main/bg01.png) no-repeat center center/cover;}
+.visual02{background: url(../images/main/bg02.png) no-repeat center center/cover;}
+.visual03{background: url(../images/main/bg03.png) no-repeat center center/cover;}
+.visual04{background: url(../images/main/bg04.png) no-repeat center center/cover;}
+
+/* 비주얼 섹션 */
+.visual{display: flex; flex-direction: column;}
+.visual .inner{display: flex; flex-direction: column; justify-content: end; padding-bottom: 10%; min-height: 600px; height: 100vh; align-items: center; background-size: cover !important;}
+.visual .inner video{position: absolute; top: 0; left: 0; z-index: 0;}
+.visual .inner > div{width: 100%; position: relative; max-width: 70%; word-break: keep-all; transform: translateX(-10%);}
+.visual .inner > div h2{color: #fff; font-size: 56px; line-height: 1.4;}
+.visual .inner > div p{margin-top: 45px; color: #fff; line-height: 1.5; font-size: 26px; font-weight: 400;}
+
+
+/* 커리큘럼 섹션 */
+.curri{width: 100%; position: relative; padding: 130px 0 200px; z-index: 11;}
+.curri .ico-arr{display: inline-block; height: 22px; margin-top: 50px; background: url(/assets/images/main/ico-arr-r.png) no-repeat 100% center; color: #dcb220 !important; padding-right: 61px; font-size: 18px;}
+.curri h2{font-size: 40px; text-align: center;}
+.curri .inner{display: flex; width: 100%; max-width: 1250px; padding: 70px 20px 0; justify-content: center; gap: 0 70px; margin: auto; position: relative;}
+.curri .inner div{width: 445px; height: 550px;}
+.curri .inner div:nth-of-type(1){background: url(../images/main/curri-img01.png) no-repeat center 40%/cover;}
+.curri .inner div:nth-of-type(2){background: url(../images/main/curri-img02.png) no-repeat center center/cover;}
+.curri .inner div a{width: 100%; height: 100%; position: relative;}
+.curri .inner div a *{color: #fff;}
+.curri .inner div a span{position: absolute; top: 40%; left: 10%;}
+.curri .inner div strong{font-size: 46px; font-weight: bold;}
+.curri .inner div p{margin-top: 20px; font-size: 22px; font-weight: 300; word-break: keep-all; line-height: 1.5;}
+.curri .inner div ul{display: flex; flex-direction: column; font-size: 19px; margin-top: 40px; gap: 10px 0;}
+.curri > p{width: 100%; max-width: 1250px; padding: 0 20px; margin: auto; color: #151d2a; font-size: 46px; position: relative;}
+/* .curri i{font-size: 120px; color: #efefef; font-weight: bold; position: absolute; right: 0%; bottom: 20%; z-index: 0;} */
+
+
+/* mobile ~ tablet */
+@media screen and (max-width: 1023px){
+    *{font-size: 12px;}
+
+    /* 컨테이너 | 각 섹션 배경 */
+    .visual01{background: url(/assets/images/main/bg01.png) no-repeat 20% center/cover;}
+    .visual02{background: url(/assets/images/main/bg02.png) no-repeat 60% center/cover;}
+    .visual03{background: url(/assets/images/main/bg03.png) no-repeat 80% center/cover;}
+    .visual04{background: url(/assets/images/main/bg04.png) no-repeat 20% center/cover;}
+
+    /* 비주얼 섹션 */
+    .visual .inner{min-height: auto; height: auto; justify-content: end; align-items: start; padding: 40% 0 10% 5%;}
+    .visual .inner > div{max-width: 100%; transform: translateX(0); word-break: keep-all;}
+    .visual .inner > div h2{font-size: 20px;}
+    .visual .inner > div p{margin-top: 25px; font-size: 12px;}
+
+    /* 커리큘럼 섹션 */
+    .curri{display: flex; flex-direction: column; padding: 50px 0 35px;}
+    .curri .ico-arr{height: 15px; margin-top: 30px; font-size: 12px; padding-right: 44px; background: url(/assets/images/main/ico-arr-r.png) no-repeat 100% center/34px auto;}
+    .curri h2{font-size: 22px;}
+    .curri .inner{flex-direction: column; gap: 15px 0; padding: 30px 20px 0;}
+    .curri .inner div{width: 100%; height: 340px; max-width: 100%;}
+    .curri .inner div:nth-of-type(1){}
+    .curri .inner div:nth-of-type(2){ margin-top: 0;}
+    .curri .inner div a{display: flex; align-items: end; padding: 0 0 30px 30px; height: 340px;}
+    .curri .inner div a *{}
+    .curri .inner div a span{display: block; position: relative; top: initial; left: initial;}
+    .curri .inner div strong{font-size: 30px;}
+    .curri .inner div p{max-width: 75%; font-size: 12px;}
+    .curri .inner div ul{margin-top: 20px;}
+    .curri > p{font-size: 12px;}
+    .curri i{font-size: 60px; right: -60px; bottom: 30px;}
+}

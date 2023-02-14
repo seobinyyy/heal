@@ -1,0 +1,44 @@
+/* 메인 컬러 : -main */
+/* 서브 컬러 : -sub */
+/* 강조 컬러 : -prime*/
+/* 강조/경고/알림 컬러 : -warning */
+
+:root{
+	--prime-color: #4a19dd;
+    --sub-color: #5b15dc;
+    --cancel-color: #b4b4b4;
+
+    --main-color: #222b48;
+
+    --kakao-color: #edea0a;
+    --naver-color: #1bcd46;
+
+    --warning-color: #ff2d62;
+}
+
+
+
+
+/* 배경 컬러 */
+.bg-prime{background: var(--prime-color);}
+.bg-main{background: var(--main-color);}
+.bg-cancel{background: var(--cancel-color);}
+.bg-sub{background: var(--sub-color);}
+
+/* 보더 컬러 */
+.bd-main{border: 1px solid var(--main-color);}
+.bd-cancel{border: 1px solid var(--cancel-color);}
+
+/* 텍스트 컬러 */
+.txt-prime{color: var(--prime-color);}
+.txt-main{color: var(--main-color);}
+.txt-fff{color: #fff;}
+.txt-warning{color: var(--warning-color);}
+
+/* 버튼 컬러 */
+.btns .bg-prime,
+.btn.bg-prime,
+.btns .bg-main,
+.btn.bg-main{color: #fff;}
+.btns .bg-sub{color: #fff;}
+.btns .bg-cancel{color: #161d2c;}

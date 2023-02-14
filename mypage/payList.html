@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>결제내역</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/assets/css/base/reset.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/mypage.css">
+    <script type="text/javascript" src="/assets/libs/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/common.js"></script>
+</head>
+<body>
+    <div id="payList" class="wrap pay-list">
+        <!-- #include | header -->
+        <div data-include-path="/include/header.html"></div>
+
+        <div class="container">
+            <div class="inner">
+                <aside>
+                    <strong>내 계정</strong>
+                    <ul>
+                        <li><a href="/mypage/profile.html">개인정보</a></li>
+                        <li><a href="/mypage/payList.html" class="active">결제내역</a></li>
+                        <li><a href="/mypage/myClass.html">내 강의실</a></li>
+                    </ul>
+                </aside>
+                <div class="content">
+                    <h2>결제내역 조회</h2>
+                    
+                    <div class="tbl align-left">
+                        <table cellpadding="0" cellspacing="0" class="w100p">
+                            <colgroup>
+                                <col style="width: 10%">
+                                <col style="width: 90%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>조회기간</th>
+                                    <td>
+                                        <div class="flex">
+                                            <div class="btns term-btns">
+                                                <label for="termsChk01">
+                                                    <input type="radio" name="termsChk" id="termsChk01"><span>15일</span>
+                                                </label>
+                                                <label for="termsChk02">
+                                                    <input type="radio" name="termsChk" id="termsChk02" checked><span>1개월</span>
+                                                </label>
+                                                <label for="termsChk03">
+                                                    <input type="radio" name="termsChk" id="termsChk03"><span>3개월</span>
+                                                </label>
+                                                <label for="termsChk04">
+                                                    <input type="radio" name="termsChk" id="termsChk04"><span>6개월</span>
+                                                </label>
+                                            </div>
+                                            <div class="datepicker"> <!-- jquery ui 이용 (하단에 스크립트 추가) -->
+                                                <input type="text" id="from" name="from" placeholder="시작일" readonly>
+                                                <input type="text" id="to" name="to" placeholder="종료일" readonly>
+                                            </div>
+                                            <button type="button" class="btn btn-xsm bg-main">검색</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 클래스 낱개 결제 시 -->
+                    <div class="tbl">
+                        <strong>전체 (1)</strong>
+                        <table cellpadding="0" cellspacing="0" class="w100p">
+                            <colgroup>
+                                <col style="width: 10%">
+                                <col style="width: 23%">
+                                <col style="width: 20%">
+                                <col style="width: 12%">
+                                <col style="width: 15%">
+                                <col style="width: 10%">
+                                <col style="width: 10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>주문코드</th>
+                                    <th>상품명</th>
+                                    <th>수강 일시</th>
+                                    <th>결제 금액</th>
+                                    <th>결제 수단</th>
+                                    <th>결제일</th>
+                                    <th>결제 상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>OR5YW9WR9C</td>
+                                    <td>기초 해부학</td>
+                                    <td>06/20  AM 9:00 ~ PM 16:00<br>06/21  AM 9:00 ~ PM 16:00</td>
+                                    <td><em class="bold font-en">700,000</em>원</td>
+                                    <td>신용카드<br>(카카오뱅크카드)</td>
+                                    <td>2022-03-13</td>
+                                    <td>
+                                        <span class="txt-warning">결제완료</span>
+                                        <a href="/mypage/refundRe.html" class="btn btn-xxsm bd-cancel">환불신청</a>
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <td>OR5YW9WR9C</td>
+                                    <td>긴글자일때는 이렇게 들어갑니다 긴글자일때는 이렇게 들어갑니다 긴글자일때는 이렇게 들어갑니다</td>
+                                    <td>06/20  AM 9:00 ~ PM 16:00<br>06/21  AM 9:00 ~ PM 16:00</td>
+                                    <td><em class="bold font-en">700,000</em>원</td>
+                                    <td>신용카드<br>(카카오뱅크카드)</td>
+                                    <td>2022-03-13</td>
+                                    <td>
+                                        <span class="txt-warning">결제완료</span>
+                                        <a href="/mypage/refundRe.html" class="btn btn-xxsm bd-cancel">환불신청</a>
+                                    </td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- // 클래스 낱개 결제 시 -->
+
+                    <!-- 커리큘럼 결제 시 -->
+                    <div class="tbl">
+                        <strong>전체 (1)</strong>
+                        <table cellpadding="0" cellspacing="0" class="w100p">
+                            <colgroup>
+                                <col style="width: 10%">
+                                <col style="width: 23%">
+                                <col style="width: 20%">
+                                <col style="width: 12%">
+                                <col style="width: 15%">
+                                <col style="width: 10%">
+                                <col style="width: 10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>주문코드</th>
+                                    <th>상품명</th>
+                                    <th>수강 일시</th>
+                                    <th>결제 금액</th>
+                                    <th>결제 수단</th>
+                                    <th>결제일</th>
+                                    <th>결제 상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>OR5YW9WR9C</td>
+                                    <td>Advanced Spring Season 패키지</td>
+                                    <td>06/20  AM 9:00 ~ PM 16:00<br>06/21  AM 9:00 ~ PM 16:00</td>
+                                    <td><em class="bold font-en">2,240,000</em>원</td>
+                                    <td>신용카드<br>(카카오뱅크카드)</td>
+                                    <td>2022-03-13</td>
+                                    <td>
+                                        <span class="txt-warning">결제완료</span>
+                                        <a href="/mypage/refundRe.html" class="btn btn-xxsm bd-cancel">환불신청</a>
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <td>OR5YW9WR9C</td>
+                                    <td>Advanced Spring Season 패키지</td>
+                                    <td>06/20  AM 9:00 ~ PM 16:00<br>06/21  AM 9:00 ~ PM 16:00</td>
+                                    <td><em class="bold font-en">2,240,000</em>원</td>
+                                    <td>신용카드<br>(카카오뱅크카드)</td>
+                                    <td>2022-03-13</td>
+                                    <td>
+                                        <span class="txt-warning">결제완료</span>
+                                        <a href="/mypage/refundRe.html" class="btn btn-xxsm bd-cancel">환불신청</a>
+                                    </td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- // 커리큘럼 전체 결제 시 -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- #include | footer -->
+        <div data-include-path="/include/footer.html"></div>
+    </div>
+
+    <script src="/assets/libs/jquery-ui.min.js"></script>
+    <script>
+        $( function() {
+            var dateFormat = "mm/dd/yy",
+            from = $( "#from" )
+                .datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 1
+                })
+                .on( "change", function() {
+                to.datepicker( "option", "minDate", getDate( this ) );
+                }),
+            to = $( "#to" ).datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 1
+            })
+            .on( "change", function() {
+                from.datepicker( "option", "maxDate", getDate( this ) );
+            });
+        
+            function getDate( element ) {
+            var date;
+            try {
+                date = $.datepicker.parseDate( dateFormat, element.value );
+            } catch( error ) {
+                date = null;
+            }
+        
+            return date;
+            }
+        } );
+    </script>
+</body>

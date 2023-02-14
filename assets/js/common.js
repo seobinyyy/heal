@@ -27,6 +27,11 @@ function isMobile(){
 }
 
 $(function(){
+    // 화면 맨 위로 올라가기
+    $(".btn-offset-top").on("click", function(){
+        $('html, body').animate({scrollTop:0}, '300');
+    });
+
     // 모달창 열기
     var $btnModal = $(".btn-modal");
     var $modal = $(".modal");
@@ -63,14 +68,11 @@ $(function(){
 
                 // loadmorecontest();
 
-                console.log("1");
                 $("header").removeClass("on");
             }else{
-                console.log("2");
                 $("header").addClass("on");
             }
         }
-        
     } else {
         // pc only code
         console.log("pc");
@@ -83,16 +85,25 @@ $(function(){
 
     $(window).on("scroll", function() {
         var winoffset = $(window).scrollTop();
+
+        // 헤더 흰배경 노출여부
         if (winoffset > 50) {
             $("header").addClass("on");
         }else{
             $("header").removeClass("on");
         }
+
+        // 맨 위로 올라가기
+        if(winoffset > $(".visual03").offset().top){
+            $(".btn-offset-top").addClass("active");
+        }else{
+            $(".btn-offset-top").removeClass("active");
+        }
     });
 
     // 모바일 | 헤더메뉴 열기
     $(".btn-nav-menu").on("click", function(){
-        $(this).toggleClass("active");
+        $(this).toggleClass("active");        
     });
 
 });

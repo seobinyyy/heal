@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>로그인</title>
+    <link rel="stylesheet" href="/assets/css/base/reset.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/user.css">
+    <script type="text/javascript" src="/assets/libs/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/common.js"></script>
+</head>
+<body>
+    <div id="loginNm" class="wrap login-nm-wrap">
+        <!-- #include | header -->
+        <div data-include-path="/include/header.html"></div>
+
+        <div class="container">
+            <div class="inner">
+                <h2>로그인</h2>
+                <div class="box">
+                    <dl>
+                        <dt></dt>
+                        <dd><input type="email" class="w100p" placeholder="이메일 입력"></dd>
+                        <dd><input type="password" class="w100p" placeholder="비밀번호 입력"></dd>
+                        <em class="txt-warning">아이디 또는 비밀번호를 잘못 입력했습니다.</em>
+                    </dl>
+                    
+                    <div class="btns">
+                        <a href="/index.html" class="btn btn-md bg-prime w100p">로그인</a>
+                    </div>
+
+                    <ul class="login-menu">
+                        <li><a href="/user/help/idInquiry.html">아이디 찾기</a></li>
+                        <li><a href="/user/help/pwInquiry.html">비밀번호 찾기</a></li>
+                        <li><a href="/user/join/form.html">회원가입</a></li>
+                    </ul>
+
+                    <div class="btns btm">
+                        <a href="/user/login.html" class="btn btn-md bd-main w100p">간편 로그인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- #include | footer -->
+        <div data-include-path="/include/footer.html"></div>
+    </div>
+</body>
+</html>

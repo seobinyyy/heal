@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>아이디 찾기</title>
+    <link rel="stylesheet" href="/assets/css/base/reset.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/user.css">
+    <script type="text/javascript" src="/assets/libs/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/common.js"></script>
+</head>
+<body>
+    <div id="idInquiry" class="wrap id-inquiry">
+        <!-- #include | header -->
+        <div data-include-path="/include/header.html"></div>
+
+        <div class="container">
+            <div class="inner">
+                <h2>아이디 찾기</h2>
+                <div class="box">
+                    <input type="text" class="w100p" placeholder="이름 입력">
+                    <input type="tel" class="w100p" placeholder="휴대폰번호 입력 (-없이 입력)">
+                    <div class="w100p bd-input">
+                        <input type="tel" class="bd0" placeholder="인증번호 입력">
+                        <button type="button" class="btn btn-sm bg-main">인증요청</button>
+                        <!-- <button type="button" class="btn btn-sm bg-main" disabled>재발송</button> -->
+                    </div>
+
+                    <div class="btns">
+                        <a href="/user/help/idInquiryDone.html" class="btn btn-md bg-prime w100p">아이디 찾기</a>
+                    </div>
+
+                    <div class="btns">
+                        <a href="/user/login.html" class="btn btn-md bd-main w100p">간편 로그인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- #include | footer -->
+        <div data-include-path="/include/footer.html"></div>
+    </div>
+</body>
+</html>

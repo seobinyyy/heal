@@ -1,4 +1,4 @@
-*{padding: 0; margin: 0; box-sizing: border-box;}
+*{padding: 0; margin: 0; box-sizing: border-box; line-height:1.2;}
 fieldset,img{border:0;}
 img {display:block}
 dl,ul,ol,menu,li{list-style:none; margin: 0;}
@@ -8,9 +8,9 @@ label, input,select,textarea,button{vertical-align:middle; outline: none; margin
 input::-ms-clear{display:none}
 input[type="search"]::-webkit-search-cancel-button{margin-right: 6%;}
 button{border:0 none;background-color:transparent;cursor:pointer}
-body,th,td,input,select,textarea,button{line-height:1.3;color:#333}
+body,th,td,input,select,textarea,button{}
 textarea{resize: none;}
-a{display:block;color:#333;text-decoration:none}
+a{display:block;text-decoration:none}
 a:active,a:hover{text-decoration:none;}
 address,caption,cite,code,dfn,em,var{font-style:normal;}
 main, section, article, aside, footer, header, nav, hgroup {display:block}

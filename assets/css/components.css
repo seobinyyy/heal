@@ -1,19 +1,89 @@
-/* 컬러 */
-.txt-warning{}
+@import url(base/color.css);
+@import url(base/size.css);
+
+
+
+/* 보더 */
+.bd0{border: 0 !important;}
+
+/* 버튼 */
+.btns{display: flex; gap: 0 10px; text-align: center; justify-content: center;}
+.btn{display: inline-block; text-align: center; font-family: inherit;}
+.btn-sm{min-width: 80px; height: 40px; padding: 0 15px; font-size: 14px;}
+.btn-xsm{min-width: 80px; height: 34px; padding: 0 10px; font-size: 14px;}
+.btn-xxsm{height: 24px; padding: 0 4px; font-size: 13px;}
+.btn-md{min-width: 140px; height: 60px; font-size: 18px;}
+a.btn-xxsm{line-height: 22px;}
+a.btn-xsm{line-height: 32px;}
+a.btn-sm{line-height: 38px;}
+a.btn-md{line-height: 58px;}
+.btn-lg{}
+
+.btn:disabled{background: #afb1bb;}
+
 
 /* 인풋 */
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="tel"],
+input[type="number"], select{background: #fff; border: 0; font-size: 16px;}
+input + input{margin-top: -1px;}
+.bd-input{display: flex; border: 1px solid var(--main-color); align-items: center;}
 
+/* 인풋 & 버튼 */
+.input-btns{display: flex; gap: 0 5px;}
+.input-btns input{}
+.input-btns .btns{}
+
+/* 체크리스트 & 체크박스 */
+.chk-lst{}
+.chk-lst > div{position: relative; overflow: hidden;}
+.chk-lst input[type="checkbox"]{position: absolute; top: -2em; left: -2em;}
+.chk-lst input + span{display: inline-block; width: 21px; height: 21px; background: url(/assets/images/icon/ico-chk-off.png) no-repeat 0 0/100% auto; vertical-align: middle; margin-right: 5px;}
+.chk-lst input:checked + span{background: url(/assets/images/icon/ico-chk-on.png) no-repeat 0 0/100% auto;}
+.chk-lst input ~ label{cursor: pointer;}
+
+/* 데이트피커 */
+.datepicker{}
+.datepicker input[type="text"]{width: 130px; height: 34px; font-size: 13px; padding: 0 10px; border: 1px solid #d5d9e5; background: url(/assets/images/icon/ico-cal.png) no-repeat 90% center;}
+
+ 
 /* 리스트 */
 
 /* 테이블 */
+.tbl{}
+.tbl table{border-top: 1px solid var(--main-color);}
+.tbl table thead th{padding: 10px; border-bottom: 1px solid #d5d6dc;}
+.tbl table tbody th,
+.tbl table tbody td{padding: 15px; border-bottom: 1px solid #d5d6dc;}
+
+.tbl.align-left table{text-align: left;}
+
+.th-bg-tbl{}
+.th-bg-tbl tbody th{background: #fafafc;}
 
 /* 모달 */
-.modal{display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;}
-.modal .dimmed{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6);}
+.modal{display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 900;}
+.modal .dimmed{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85);}
 .modal.active{display: block;}
-.modal .modal-dialog{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; border-radius: 10px;}
-.modal .modal-header{display: flex;}
-.modal .modal-header strong{}
-.modal .modal-header button{margin-left: auto;}
-.modal .modal-body{}
-.modal .modal-footer{}
+.modal .modal-dialog{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 50px;}
+.modal .modal-header{display: flex; padding-bottom: 50px; border-bottom: 1px solid #222b48;}
+.modal .modal-header strong{font-size: 24px; font-weight: bold;}
+.modal .modal-header .btn-modal-cls{width: 28px; height: 31px; margin-left: auto; background: url(/assets/images/icon/ico-modal-cls.png) no-repeat 0 0/100% auto;}
+.modal .modal-body{min-width: 600px; padding: 40px 0; text-align: center;}
+.modal .modal-body .tbl{margin: -40px 0;}
+.modal .modal-body .tbl table{border-top: 0;}
+.modal .modal-body .box{width: 320px; margin: auto;}
+.modal .modal-body .txt-warning{margin-top: 10px; font-size: 14px;}
+.modal .modal-footer{border-top: 1px solid #d5d6dc;}
+.modal .modal-footer .btns{margin-top: 40px;}
+.modal .modal-footer .btns .btn{width: 140px;}
+
+.modal input[type="text"],
+.modal input[type="password"],
+.modal input[type="number"],
+.modal input[type="email"]{height: 42px; border: 1px solid #d5d9e5; font-size: 16px;}
+
+.full-modal{}
+.full-modal .modal-dialog{background: none;}

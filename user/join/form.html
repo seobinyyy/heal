@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="/assets/css/base/reset.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/user.css">
+    <script type="text/javascript" src="/assets/libs/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/common.js"></script>
+</head>
+<body>
+    <div id="join" class="wrap join-wrap">
+        <!-- #include | header -->
+        <div data-include-path="/include/header.html"></div>
+
+        <div class="container">
+            <div class="inner">
+                <h2>회원가입</h2>
+                <div class="box">
+                    <dl>
+                        <dt>이메일 <em class="txt-warning">*</em></dt>
+                        <dd>
+                            <input type="email" placeholder="이메일 입력">
+                            <button type="button" class="btn btn-sm bg-main">중복확인</button>
+                        </dd>
+                        <em class="txt-warning">사용하실 수 없는 이메일입니다.</em>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호 <em class="txt-warning">*</em></dt>
+                        <dd><input type="password" placeholder="비밀번호 입력"></dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호 확인 <em class="txt-warning">*</em></dt>
+                        <dd><input type="password" placeholder="비밀번호 확인"></dd>
+                    </dl>
+                    <dl>
+                        <dt>이름 <em class="txt-warning">*</em></dt>
+                        <dd><input type="text" placeholder="이름 입력"></dd>
+                    </dl>
+                    <dl>
+                        <dt>휴대폰 번호 <em class="txt-warning">*</em></dt>
+                        <dd>
+                            <input type="tel" placeholder="휴대폰 번호 (-없이 입력)">
+                            <button type="submit" class="btn btn-sm bg-main btn-code-push">인증번호 전송</button>
+                        </dd>
+                        <em class="txt-warning">휴대폰 번호 형식이 올바르지 않습니다.</em>
+                        <dd class="code-input" style="display: none;"> <!-- 인증번호전송 버튼 클릭 시 활성화 -->
+                            <input type="number" placeholder="인증번호" value="남은시간 : 0분 00초">
+                            <button type="submit" class="btn btn-sm bg-main">인증번호 확인</button>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>생년월일</dt>
+                        <dd>
+                            <div class="datepicker w100p">
+                                <input type="text" placeholder="생년월일 입력(yymmdd)" class="w100p p0 bd0">
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>성별</dt>
+                        <dd>
+                            <select name="" id="" class="bd0 w100p p0">
+                                <option value="선택 안함">선택 안함</option>
+                                <option value="남자">남</option>
+                                <option value="여자">여</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>직업 <em class="txt-warning">*</em></dt>
+                        <dd>
+                            <select name="" id="" class="bd0 w100p p0">
+                                <option value="">직업 입력</option>
+                                <option value="">헬스 트레이너</option>
+                                <option value="">요가 강사</option>
+                                <option value="">필라테스 강사</option>
+                                <option value="">재활 트레이너</option>
+                                <option value="">몰리치료사</option>
+                                <option value="">기타</option>
+                            </select>
+                        </dd>
+                        <dd><!-- 직접입력 체크 시 활성화 -->
+                            <input type="text" placeholder="직접 입력" class="w100p"> 
+                        </dd>
+                    </dl>
+                    <div class="chk-lst">
+                        <div>
+                            <input type="checkbox" id="privacyTerms">
+                            <span></span>
+                            <label for="privacyTerms">개인정보처리방침</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="useTerms">
+                            <span></span>
+                            <label for="useTerms">이용약관</label>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <a href="/user/join/joinDone.html" class="btn btn-md bg-prime w100p">가입하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- #include | footer -->
+        <div data-include-path="/include/footer.html"></div>
+    </div>
+
+    <script>
+        $(function(){
+            $(".btn-code-push").on("click", function(){
+                $(".code-input").show();
+            });
+        });
+    </script>
+</body>
+</html>
